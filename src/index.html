@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonastino Heriniantsoniavo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="/assets/images/jonastino.jpg"
+      type="image/gif"
+      class="rounded-full w-16 h-16"
+    />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Saas Salama</title>
+    <!-- swiper css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      .bg-dark-blue-green {
+        background-color: #0f172a;
+      }
+      .bg-medium-dark {
+        background-color: #1e293b;
+      }
+
+      .nav-link {
+        position: relative;
+        text-decoration: none;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px; /* Ajustez la position de la ligne */
+        width: 0;
+        height: 2px; /* Épaisseur de la ligne */
+        background-color: #4ade80; /* Couleur de la ligne (vert-400) */
+        transition: width 0.3s ease; /* Animation de la largeur */
+      }
+
+      .nav-link:hover::after {
+        width: 100%; /* La ligne s'étend sur toute la largeur */
+      }
+
+      .accent-color {
+        color: #4ade80;
+      }
+      .accent-bg {
+        background-color: #4ade80;
+      }
+      .secondary-accent {
+        color: #38bdf8;
+      }
+      .secondary-accent-bg {
+        background-color: #38bdf8;
+      }
+      .accent-light-bg {
+        background-color: rgba(74, 222, 128, 0.1);
+      }
+      .secondary-light-bg {
+        background-color: rgba(56, 189, 248, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-dark-blue-green text-gray-200 font-sans">
+    <!-- Preloader Start -->
+    <div
+      class="preloader h-full fixed w-full z-50 bg-dark-blue-green transition duration-300"
+    >
+      <img
+        src="/assets/images/preloader.gif"
+        class="max-w-[12rem] md:max-w-[20rem] block absolute top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4"
+        alt="Loading"
+      />
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-medium-dark py-2 shadow-md z-50">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <a href="#home" class="text-xl font-bold text-white"
+          >Jonastino Heriniantsoniavo</a
+        >
+        <div class="hidden md:flex space-x-10">
+          <a href="#home" class="nav-link hover:text-green-400 transition"
+            >Home</a
+          >
+          <a href="#about" class="nav-link hover:text-green-400 transition"
+            >About</a
+          >
+          <a href="#skills" class="nav-link hover:text-green-400 transition"
+            >Skills</a
+          >
+          <a href="#portfolio" class="nav-link hover:text-green-400 transition"
+            >Projects</a
+          >
+          <a href="#contact" class="nav-link hover:text-green-400 transition"
+            >Contact</a
+          >
+        </div>
+        <div class="md:hidden">
+          <button id="menu-button" class="focus:outline-none">
+            <i class="fas fa-bars text-white"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Menu mobile -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+          <a href="#home" class="block px-3 py-2 hover:bg-gray-800">Home</a>
+          <a href="#about" class="block px-3 py-2 hover:bg-gray-800">About</a>
+          <a href="#skills" class="block px-3 py-2 hover:bg-gray-800">Skills</a>
+          <a href="#portfolio" class="block px-3 py-2 hover:bg-gray-800"
+            >Projects</a
+          >
+          <a href="#contact" class="block px-3 py-2 hover:bg-gray-800"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Accueil / Hero Section -->
+    <section
+      id="home"
+      class="py-20 md:py-32 bg-gradient-to-r from-green-500 to-blue-600 text-white"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+          Jonastino Heriniantsoniavo
+        </h1>
+        <p class="text-xl md:text-2xl mb-12 animate-fade-in-up">
+          Software engineer | Web & Mobile applications | Agile & Cybersecurity
+          learner
+        </p>
+        <a
+          href="#contact"
+          class="bg-dark-blue-green text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition animate-bounce"
+          >Contact me</a
+        >
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="py-20 bg-medium-dark">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/3 mb-10 md:mb-0">
+            <img
+              src="/assets/images/jonastino.jpg"
+              alt="Photo de profil"
+              class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg border-2"
+            />
+          </div>
+          <div class="md:w-2/3 md:pl-12">
+            <p class="text-lg leading-relaxed mb-6 text-gray-300">
+              I design and develop intuitive web and mobile applications that
+              integrate effortlessly with robust backend systems. <br />
+              My expertise spans Java Spring and PHP Laravel for solid backend
+              architecture, while React, Vue, and Tailwind CSS help me craft
+              dynamic and engaging user interfaces. <br />
+              I prioritize clean, maintainable, and scalable code to ensure
+              long-term efficiency. With a keen interest in cybersecurity and
+              agile practices, I tackle each project with a blend of innovation
+              and security.
+            </p>
+            <p class="text-lg leading-relaxed mb-6 text-gray-300">
+              🚀 Let’s create impactful tech solutions together!
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="https://github.com/Jonastino21"
+                class="flex items-center text-black gap-2 bg-gray-100 hover:bg-gray-200 transition px-4 py-2 rounded-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jonastino-heriniantsoniavo-531945213"
+                class="flex items-center text-black gap-2 bg-gray-100 hover:bg-gray-200 transition px-4 py-2 rounded-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+                LinkedIn
+              </a>
+              <a
+                href="#contact"
+                class="flex items-center gap-2 text-black bg-gray-100 hover:bg-gray-200 transition px-4 py-2 rounded-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                Email
+              </a>
+              <a
+                href="https://docs.google.com/document/d/1mJp965EWkc1H154GbDfad7YAcD_PbjCYdZ4I7N-jrQY/edit?usp=sharing"
+                class="flex items-center gap-2 bg-indigo-600 text-white hover:bg-indigo-700 transition px-4 py-2 rounded-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills" class="py-20 bg-dark-blue-green">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-2 text-white">Skills</h2>
+        <div class="w-8 h-1 bg-white mx-auto mb-6"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Compétence 1 -->
+          <div
+            class="bg-medium-dark p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-indigo-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold">Frontend development</h3>
+            </div>
+            <p class="text-gray-400">
+              HTML, CSS, JavaScript, React, Vue.js, and other modern frameworks
+              to create responsive and dynamic user interfaces.
+            </p>
+          </div>
+
+          <!-- Compétence 2 -->
+          <div
+            class="bg-medium-dark p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-indigo-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2H5z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold">Backend development</h3>
+            </div>
+            <p class="text-gray-400">
+              Java Spring, Laravel, C++. Building robust APIs and
+              high-performance backend systems.
+            </p>
+          </div>
+
+          <!-- Compétence 3 -->
+          <div
+            class="bg-medium-dark p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-indigo-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold">UI/UX Design</h3>
+            </div>
+            <p class="text-gray-400">
+              Figma, Adobe XD, Canva for creating intuitive and visually
+              appealing user interfaces focused on user experience.
+            </p>
+          </div>
+
+          <!-- Compétence 4 -->
+          <div
+            class="bg-medium-dark p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">
+                Responsive Design
+              </h3>
+            </div>
+            <p class="text-gray-400">
+              Creating websites that work seamlessly across all devices, from
+              mobile to desktop.
+            </p>
+          </div>
+
+          <!-- Compétence 5 -->
+          <div
+            class="bg-medium-dark p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">Databases</h3>
+            </div>
+            <p class="text-gray-400">
+              MongoDB, MySQL, SQLite. Designing and optimizing databases for
+              various types of projects.
+            </p>
+          </div>
+
+          <!-- Compétence 6 -->
+          <div
+            class="bg-medium-dark p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">DevOps</h3>
+            </div>
+            <p class="text-gray-400">
+              Git, Docker, CI/CD. Setting up efficient workflows for application
+              development and deployment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-20 bg-medium-dark">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-2 text-white">Projects</h2>
+        <div class="w-16 h-1 bg-white mx-auto mb-6"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Projet 1 -->
+          <div
+            class="bg-dark-blue-green rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2"
+          >
+            <img
+              src="/assets/images/salama.png"
+              alt="Projet 1"
+              class="w-full h-58"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Saas Salama</h3>
+              <p class="text-gray-400 mb-4">
+                I contributed to the development of Salama, a SaaS hospital
+                management platform that centralizes services such as billing,
+                appointments, outpatient services (OPD), inpatient care (IPD),
+                pharmacy, pathology, radiology, blood bank, ambulance, operating
+                room, accounting, and administration. Salama simplifies the
+                management of patient care and hospital operations.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-green-900 text-green-300 rounded-full text-xs"
+                  >Html</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-900 text-green-300 rounded-full text-xs"
+                  >Tailwindcss</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-900 text-green-300 rounded-full text-xs"
+                  >CodeIgniter</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Projet 2 -->
+          <div
+            class="bg-dark-blue-green rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2"
+          >
+            <img
+              src="/assets/images/erpinnov.png"
+              alt="Projet 2"
+              class="w-full h-58"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">
+                ERPINNOV - Automated dolibarr instance management
+              </h3>
+              <p class="text-gray-400 mb-4">
+                I contributed to the development of ERPINNOV, a SaaS application
+                designed to automate the management and creation of Dolibarr
+                instances, an open-source ERP/CRM system.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs"
+                  >Livewire</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs"
+                  >Vuexy</span
+                >
+              </div>
+              <div class="mt-6"></div>
+            </div>
+          </div>
+          <!-- Projet 3 -->
+          <div
+            class="bg-dark-blue-green rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2"
+          >
+            <img
+              src="/assets/images/kiraroshop.png"
+              alt="Projet 3"
+              class="w-full h-58"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Kiraroshop</h3>
+              <p class="text-gray-400 mb-4">
+                I developed an online store specializing in shoes. The site
+                emphasizes the combination of comfort and style, suggesting that
+                it offers shoes suitable for various occasions.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-green-900 text-green-300 rounded-full text-xs"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-900 text-green-300 rounded-full text-xs"
+                  >Tailwindcss</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-900 text-green-300 rounded-full text-xs"
+                  >Spring boot</span
+                >
+              </div>
+              <div class="mt-6">
+                <a
+                  href="https://jonastino21.github.io/kiraroshop-front/"
+                  class="text-green-400 hover:text-green-300 font-medium"
+                  >Project <i class="fas fa-arrow-right ml-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a
+            href="https://github.com/Jonastino21"
+            class="inline-block bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:from-green-600 hover:to-blue-600 transition"
+            >All projects</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-16 md:py-24 px-4 md:px-6 bg-dark-blue-green"
+    >
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-2 text-white">Contact</h2>
+        <div class="w-16 h-1 bg-white mx-auto mb-6"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-2xl font-semibold mb-4 text-white">
+              Let's discuss your project
+            </h3>
+            <p class="text-gray-400 mb-6">
+              Do you have a project in mind or a question? Feel free to contact
+              me. I'm available to discuss your needs and help you bring your
+              vision to life.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i class="fas fa-envelope text-xl text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Email</h4>
+                  <p class="text-gray-400">heryniantso@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i class="fas fa-phone text-xl text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Phone</h4>
+                  <p class="text-gray-400">+261 33 40 018 28</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i class="fas fa-map-marker-alt text-xl text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Location</h4>
+                  <p class="text-gray-400">Mahajanga, Madagascar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form action="https://formspree.io/f/mwkgpegw" method="POST">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-300 font-medium mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent text-white"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-300 font-medium mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent text-white"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="subject"
+                  class="block text-gray-300 font-medium mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent text-white"
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-gray-300 font-medium mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  name="message"
+                  class="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent text-white"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 transition text-white font-medium py-3 px-4 rounded-lg"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-medium-dark text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="#home" class="text-2xl font-bold"
+              >Jonastino Heriniantsoniavo</a
+            >
+            <p class="mt-2 text-gray-400">
+              Software engineer | Web & Mobile applications | Agile &
+              Cybersecurity learner
+            </p>
+          </div>
+          <div class="flex space-x-6">
+            <a
+              href="https://www.linkedin.com/in/jonastino-heriniantsoniavo-531945213"
+              class="hover:text-green-400 transition"
+              ><i class="fab fa-linkedin text-xl"></i
+            ></a>
+            <a
+              href="https://github.com/Jonastino21"
+              class="hover:text-green-400 transition"
+              ><i class="fab fa-github text-xl"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100088673478688"
+              class="hover:text-green-400 transition"
+              ><i class="fab fa-facebook text-xl"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="border-t border-white-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-500">© 2025 Heriniantsoniavo.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- swiperjs cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Wow Animation JS -->
+    <script src="/wow-master/wow.min.js"></script>
+    <!-- Main Js Config -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/landingpage.js"></script>
+    <!-- Script pour le menu mobile -->
+    <script>
+      document
+        .getElementById("menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Script pour fermer le menu en cliquant sur un lien
+      const menuLinks = document.querySelectorAll("#mobile-menu a");
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.add("hidden");
+        });
+      });
+
+      // Animation de défilement doux
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
