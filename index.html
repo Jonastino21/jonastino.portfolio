@@ -105,22 +105,52 @@
           >Jonastino Heriniantsoniavo</a
         >
         <div class="hidden md:flex space-x-10">
-          <a href="#home" class="nav-link hover:text-green-400 transition"
+          <a
+            href="#home"
+            class="nav-link hover:text-green-400 transition"
+            data-fr="Accueil"
+            data-en="Home"
             >Home</a
           >
-          <a href="#about" class="nav-link hover:text-green-400 transition"
+          <a
+            href="#about"
+            class="nav-link hover:text-green-400 transition"
+            data-fr="À propos"
+            data-en="About"
             >About</a
           >
-          <a href="#skills" class="nav-link hover:text-green-400 transition"
+          <a
+            href="#skills"
+            class="nav-link hover:text-green-400 transition"
+            data-fr="Compétences"
+            data-en="Skills"
             >Skills</a
           >
-          <a href="#portfolio" class="nav-link hover:text-green-400 transition"
+          <a
+            href="#portfolio"
+            class="nav-link hover:text-green-400 transition"
+            data-fr="Projets"
+            data-en="Projects"
             >Projects</a
           >
-          <a href="#contact" class="nav-link hover:text-green-400 transition"
+          <a
+            href="#contact"
+            class="nav-link hover:text-green-400 transition"
+            data-fr="Contact"
+            data-en="Contact"
             >Contact</a
           >
         </div>
+        <div class="flex items-center space-x-4">
+          <select
+            id="language-selector"
+            class="bg-medium-dark p-2 text-white border-none focus:ring-0"
+          >
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 Français</option>
+          </select>
+        </div>
+
         <div class="md:hidden">
           <button id="menu-button" class="focus:outline-none">
             <i class="fas fa-bars text-white"></i>
@@ -130,13 +160,39 @@
       <!-- Menu mobile -->
       <div id="mobile-menu" class="hidden md:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
-          <a href="#home" class="block px-3 py-2 hover:bg-gray-800">Home</a>
-          <a href="#about" class="block px-3 py-2 hover:bg-gray-800">About</a>
-          <a href="#skills" class="block px-3 py-2 hover:bg-gray-800">Skills</a>
-          <a href="#portfolio" class="block px-3 py-2 hover:bg-gray-800"
+          <a
+            href="#home"
+            class="block px-3 py-2 hover:bg-gray-800"
+            data-fr="Accueil"
+            data-en="Home"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 hover:bg-gray-800"
+            data-fr="À propos"
+            data-en="About"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="block px-3 py-2 hover:bg-gray-800"
+            data-fr="Compétences"
+            data-en="Skills"
+            >Skills</a
+          >
+          <a
+            href="#portfolio"
+            class="block px-3 py-2 hover:bg-gray-800"
+            data-fr="Projets"
+            data-en="Projects"
             >Projects</a
           >
-          <a href="#contact" class="block px-3 py-2 hover:bg-gray-800"
+          <a
+            href="#contact"
+            class="block px-3 py-2 hover:bg-gray-800"
+            data-fr="Contact"
+            data-en="Contact"
             >Contact</a
           >
         </div>
@@ -151,13 +207,19 @@
         <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
           Jonastino Heriniantsoniavo
         </h1>
-        <p class="text-xl md:text-2xl mb-12 animate-fade-in-up">
+        <p
+          class="text-xl md:text-2xl mb-12 animate-fade-in-up"
+          data-fr="Ingénieur logiciel | Développement Web & Mobile | Passionné d’Agilité & Cybersécurité"
+          data-en="Software engineer | Web & Mobile applications | Agile & Cybersecurity learner"
+        >
           Software engineer | Web & Mobile applications | Agile & Cybersecurity
           learner
         </p>
         <a
           href="#contact"
           class="bg-dark-blue-green text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition animate-bounce"
+          data-fr="Me contacter"
+          data-en="Contact me"
           >Contact me</a
         >
       </div>
@@ -175,7 +237,11 @@
             />
           </div>
           <div class="md:w-2/3 md:pl-12">
-            <p class="text-lg leading-relaxed mb-6 text-gray-300">
+            <p
+              class="text-lg leading-relaxed mb-6 text-gray-300"
+              data-fr="Je conçois et développe des applications web et mobiles intuitives, parfaitement intégrées à des systèmes backend robustes. Mon expertise s'étend à Java Spring et PHP Laravel pour une architecture backend solide, tandis que React, Vue et Tailwind CSS me permettent de créer des interfaces utilisateur dynamiques et attrayantes. Je privilégie un code propre, maintenable et évolutif pour assurer une efficacité à long terme. Passionné par la cybersécurité et les pratiques agiles, j'aborde chaque projet avec un mélange d'innovation et de sécurité."
+              data-en="I design and develop intuitive web and mobile applications that integrate effortlessly with robust backend systems. My expertise spans Java Spring and PHP Laravel for solid backend architecture, while React, Vue, and Tailwind CSS help me craft dynamic and engaging user interfaces. I prioritize clean, maintainable, and scalable code to ensure long-term efficiency. With a keen interest in cybersecurity and agile practices, I tackle each project with a blend of innovation and security."
+            >
               I design and develop intuitive web and mobile applications that
               integrate effortlessly with robust backend systems. <br />
               My expertise spans Java Spring and PHP Laravel for solid backend
@@ -186,8 +252,12 @@
               agile practices, I tackle each project with a blend of innovation
               and security.
             </p>
-            <p class="text-lg leading-relaxed mb-6 text-gray-300">
-              🚀 Let’s create impactful tech solutions together!
+            <p
+              class="text-lg leading-relaxed mb-6 text-gray-300"
+              data-fr="🚀 Créons ensemble des solutions technologiques impactantes!"
+              data-en="🚀 Let's create impactful tech solutions together!"
+            >
+              🚀 Let's create impactful tech solutions together!
             </p>
             <div class="flex flex-wrap gap-4">
               <a
@@ -204,7 +274,7 @@
                     d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
                   />
                 </svg>
-                GitHub
+                <span data-fr="GitHub" data-en="GitHub">GitHub</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/jonastino-heriniantsoniavo-531945213"
@@ -220,7 +290,7 @@
                     d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
                   />
                 </svg>
-                LinkedIn
+                <span data-fr="LinkedIn" data-en="LinkedIn">LinkedIn</span>
               </a>
               <a
                 href="#contact"
@@ -240,7 +310,7 @@
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                Email
+                <span data-fr="Email" data-en="Email">Email</span>
               </a>
               <a
                 href="https://docs.google.com/document/d/1mJp965EWkc1H154GbDfad7YAcD_PbjCYdZ4I7N-jrQY/edit?usp=sharing"
@@ -260,18 +330,25 @@
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                   />
                 </svg>
-                Download CV
+                <span data-fr="Télécharger CV" data-en="Download CV"
+                  >Download CV</span
+                >
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Compétences -->
     <section id="skills" class="py-20 bg-dark-blue-green">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-2 text-white">Skills</h2>
+        <h2
+          class="text-3xl font-bold text-center mb-2 text-white"
+          data-fr="Compétences"
+          data-en="Skills"
+        >
+          Skills
+        </h2>
         <div class="w-8 h-1 bg-white mx-auto mb-6"></div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -296,9 +373,19 @@
                   />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold">Frontend development</h3>
+              <h3
+                class="text-xl font-semibold"
+                data-fr="Développement frontend"
+                data-en="Frontend development"
+              >
+                Frontend development
+              </h3>
             </div>
-            <p class="text-gray-400">
+            <p
+              class="text-gray-400"
+              data-fr="HTML, CSS, JavaScript, React, Vue.js et autres frameworks modernes pour créer des interfaces utilisateur réactives et dynamiques."
+              data-en="HTML, CSS, JavaScript, React, Vue.js, and other modern frameworks to create responsive and dynamic user interfaces."
+            >
               HTML, CSS, JavaScript, React, Vue.js, and other modern frameworks
               to create responsive and dynamic user interfaces.
             </p>
@@ -325,9 +412,19 @@
                   />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold">Backend development</h3>
+              <h3
+                class="text-xl font-semibold"
+                data-fr="Développement backend"
+                data-en="Backend development"
+              >
+                Backend development
+              </h3>
             </div>
-            <p class="text-gray-400">
+            <p
+              class="text-gray-400"
+              data-fr="Java Spring, Laravel, C++. Développement d'APIs robustes et de systèmes backend performants."
+              data-en="Java Spring, Laravel, C++. Building robust APIs and high-performance backend systems."
+            >
               Java Spring, Laravel, C++. Building robust APIs and
               high-performance backend systems.
             </p>
@@ -354,9 +451,19 @@
                   />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold">UI/UX Design</h3>
+              <h3
+                class="text-xl font-semibold"
+                data-fr="Design UI/UX"
+                data-en="UI/UX Design"
+              >
+                UI/UX Design
+              </h3>
             </div>
-            <p class="text-gray-400">
+            <p
+              class="text-gray-400"
+              data-fr="Figma, Adobe XD, Canva pour créer des interfaces utilisateur intuitives et visuellement attrayantes centrées sur l'expérience utilisateur."
+              data-en="Figma, Adobe XD, Canva for creating intuitive and visually appealing user interfaces focused on user experience."
+            >
               Figma, Adobe XD, Canva for creating intuitive and visually
               appealing user interfaces focused on user experience.
             </p>
@@ -383,11 +490,19 @@
                   />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-white">
-                Responsive Design
+              <h3
+                class="text-xl font-semibold text-white"
+                data-fr="Design responsive"
+                data-en="Responsive design"
+              >
+                Responsive design
               </h3>
             </div>
-            <p class="text-gray-400">
+            <p
+              class="text-gray-400"
+              data-fr="Création de sites web qui fonctionnent parfaitement sur tous les appareils, du mobile au desktop."
+              data-en="Creating websites that work seamlessly across all devices, from mobile to desktop."
+            >
               Creating websites that work seamlessly across all devices, from
               mobile to desktop.
             </p>
@@ -414,9 +529,19 @@
                   />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-white">Databases</h3>
+              <h3
+                class="text-xl font-semibold text-white"
+                data-fr="Bases de données"
+                data-en="Databases"
+              >
+                Databases
+              </h3>
             </div>
-            <p class="text-gray-400">
+            <p
+              class="text-gray-400"
+              data-fr="MongoDB, MySQL, SQLite. Conception et optimisation de bases de données pour différents types de projets."
+              data-en="MongoDB, MySQL, SQLite. Designing and optimizing databases for various types of projects."
+            >
               MongoDB, MySQL, SQLite. Designing and optimizing databases for
               various types of projects.
             </p>
@@ -443,9 +568,19 @@
                   />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-white">DevOps</h3>
+              <h3
+                class="text-xl font-semibold text-white"
+                data-fr="DevOps"
+                data-en="DevOps"
+              >
+                DevOps
+              </h3>
             </div>
-            <p class="text-gray-400">
+            <p
+              class="text-gray-400"
+              data-fr="Git, Docker, CI/CD. Mise en place de workflows efficaces pour le développement et le déploiement d'applications."
+              data-en="Git, Docker, CI/CD. Setting up efficient workflows for application development and deployment."
+            >
               Git, Docker, CI/CD. Setting up efficient workflows for application
               development and deployment.
             </p>
@@ -456,7 +591,13 @@
     <!-- Portfolio -->
     <section id="portfolio" class="py-20 bg-medium-dark">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-2 text-white">Projects</h2>
+        <h2
+          class="text-3xl font-bold text-center mb-2 text-white"
+          data-fr="Projets"
+          data-en="Projects"
+        >
+          Projects
+        </h2>
         <div class="w-16 h-1 bg-white mx-auto mb-6"></div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -471,7 +612,11 @@
             />
             <div class="p-6">
               <h3 class="text-xl font-bold mb-2 text-white">Saas Salama</h3>
-              <p class="text-gray-400 mb-4">
+              <p
+                class="text-gray-400 mb-4"
+                data-fr="J'ai contribué au développement de Salama, une plateforme SaaS de gestion hospitalière qui centralise des services tels que la facturation, les rendez-vous, les services ambulatoires (OPD), les soins hospitaliers (IPD), la pharmacie, la pathologie, la radiologie, la banque de sang, les ambulances, la salle d'opération, la comptabilité et l'administration. Salama simplifie la gestion des soins aux patients et des opérations hospitalières."
+                data-en="I contributed to the development of Salama, a SaaS hospital management platform that centralizes services such as billing, appointments, outpatient services (OPD), inpatient care (IPD), pharmacy, pathology, radiology, blood bank, ambulance, operating room, accounting, and administration. Salama simplifies the management of patient care and hospital operations."
+              >
                 I contributed to the development of Salama, a SaaS hospital
                 management platform that centralizes services such as billing,
                 appointments, outpatient services (OPD), inpatient care (IPD),
@@ -508,7 +653,11 @@
               <h3 class="text-xl font-bold mb-2 text-white">
                 ERPINNOV - Automated dolibarr instance management
               </h3>
-              <p class="text-gray-400 mb-4">
+              <p
+                class="text-gray-400 mb-4"
+                data-fr="J'ai contribué au développement d'ERPINNOV, une application SaaS conçue pour automatiser la gestion et la création d'instances Dolibarr, un système ERP/CRM open-source."
+                data-en="I contributed to the development of ERPINNOV, a SaaS application designed to automate the management and creation of Dolibarr instances, an open-source ERP/CRM system."
+              >
                 I contributed to the development of ERPINNOV, a SaaS application
                 designed to automate the management and creation of Dolibarr
                 instances, an open-source ERP/CRM system.
@@ -541,7 +690,11 @@
             />
             <div class="p-6">
               <h3 class="text-xl font-bold mb-2 text-white">Kiraroshop</h3>
-              <p class="text-gray-400 mb-4">
+              <p
+                class="text-gray-400 mb-4"
+                data-fr="J'ai développé une boutique en ligne spécialisée dans les chaussures. Le site met l'accent sur la combinaison de confort et de style, suggérant qu'il propose des chaussures adaptées à diverses occasions."
+                data-en="I developed an online store specializing in shoes. The site emphasizes the combination of comfort and style, suggesting that it offers shoes suitable for various occasions."
+              >
                 I developed an online store specializing in shoes. The site
                 emphasizes the combination of comfort and style, suggesting that
                 it offers shoes suitable for various occasions.
@@ -564,6 +717,8 @@
                 <a
                   href="https://jonastino21.github.io/kiraroshop-front/"
                   class="text-green-400 hover:text-green-300 font-medium"
+                  data-fr="Voir le projet"
+                  data-en="View project"
                   >Project <i class="fas fa-arrow-right ml-1"></i
                 ></a>
               </div>
@@ -574,6 +729,8 @@
           <a
             href="https://github.com/Jonastino21"
             class="inline-block bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:from-green-600 hover:to-blue-600 transition"
+            data-fr="Voir tous mes projets"
+            data-en="View all my projects"
             >All projects</a
           >
         </div>
@@ -585,14 +742,28 @@
       class="py-16 md:py-24 px-4 md:px-6 bg-dark-blue-green"
     >
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-2 text-white">Contact</h2>
+        <h2
+          class="text-3xl font-bold text-center mb-2 text-white"
+          data-fr="Contact"
+          data-en="Contact"
+        >
+          Contact
+        </h2>
         <div class="w-16 h-1 bg-white mx-auto mb-6"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h3 class="text-2xl font-semibold mb-4 text-white">
+            <h3
+              class="text-2xl font-semibold mb-4 text-white"
+              data-fr="Parlons de votre projet"
+              data-en="Let's discuss your project"
+            >
               Let's discuss your project
             </h3>
-            <p class="text-gray-400 mb-6">
+            <p
+              class="text-gray-400 mb-6"
+              data-fr="Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter. Je suis disponible pour discuter de vos besoins et vous aider à concrétiser votre vision."
+              data-en="Do you have a project in mind or a question? Feel free to contact me. I'm available to discuss your needs and help you bring your vision to life."
+            >
               Do you have a project in mind or a question? Feel free to contact
               me. I'm available to discuss your needs and help you bring your
               vision to life.
@@ -603,7 +774,13 @@
                   <i class="fas fa-envelope text-xl text-blue-600"></i>
                 </div>
                 <div>
-                  <h4 class="font-semibold text-white">Email</h4>
+                  <h4
+                    class="font-semibold text-white"
+                    data-fr="Email"
+                    data-en="Email"
+                  >
+                    Email
+                  </h4>
                   <p class="text-gray-400">heryniantso@gmail.com</p>
                 </div>
               </div>
@@ -612,7 +789,13 @@
                   <i class="fas fa-phone text-xl text-blue-600"></i>
                 </div>
                 <div>
-                  <h4 class="font-semibold text-white">Phone</h4>
+                  <h4
+                    class="font-semibold text-white"
+                    data-fr="Téléphone"
+                    data-en="Phone"
+                  >
+                    Phone
+                  </h4>
                   <p class="text-gray-400">+261 33 40 018 28</p>
                 </div>
               </div>
@@ -621,7 +804,13 @@
                   <i class="fas fa-map-marker-alt text-xl text-blue-600"></i>
                 </div>
                 <div>
-                  <h4 class="font-semibold text-white">Location</h4>
+                  <h4
+                    class="font-semibold text-white"
+                    data-fr="Localisation"
+                    data-en="Location"
+                  >
+                    Location
+                  </h4>
                   <p class="text-gray-400">Mahajanga, Madagascar</p>
                 </div>
               </div>
@@ -630,7 +819,11 @@
           <div>
             <form action="https://formspree.io/f/mwkgpegw" method="POST">
               <div class="mb-4">
-                <label for="name" class="block text-gray-300 font-medium mb-2"
+                <label
+                  for="name"
+                  class="block text-gray-300 font-medium mb-2"
+                  data-fr="Nom"
+                  data-en="Name"
                   >Name</label
                 >
                 <input
@@ -641,7 +834,11 @@
                 />
               </div>
               <div class="mb-4">
-                <label for="email" class="block text-gray-300 font-medium mb-2"
+                <label
+                  for="email"
+                  class="block text-gray-300 font-medium mb-2"
+                  data-fr="Email"
+                  data-en="Email"
                   >Email</label
                 >
                 <input
@@ -655,6 +852,8 @@
                 <label
                   for="subject"
                   class="block text-gray-300 font-medium mb-2"
+                  data-fr="Sujet"
+                  data-en="Subject"
                   >Subject</label
                 >
                 <input
@@ -668,6 +867,8 @@
                 <label
                   for="message"
                   class="block text-gray-300 font-medium mb-2"
+                  data-fr="Message"
+                  data-en="Message"
                   >Message</label
                 >
                 <textarea
@@ -680,6 +881,8 @@
               <button
                 type="submit"
                 class="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 transition text-white font-medium py-3 px-4 rounded-lg"
+                data-fr="Envoyer le message"
+                data-en="Send message"
               >
                 Send Message
               </button>
@@ -696,7 +899,11 @@
             <a href="#home" class="text-2xl font-bold"
               >Jonastino Heriniantsoniavo</a
             >
-            <p class="mt-2 text-gray-400">
+            <p
+              class="mt-2 text-gray-400"
+              data-fr="Ingénieur logiciel | Applications web & mobiles | Apprenant Agile & Cybersécurité"
+              data-en="Software engineer | Web & Mobile applications | Agile & Cybersecurity learner"
+            >
               Software engineer | Web & Mobile applications | Agile &
               Cybersecurity learner
             </p>
@@ -726,6 +933,7 @@
         </div>
       </div>
     </footer>
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- swiperjs cdn link -->
@@ -762,5 +970,6 @@
         });
       });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
